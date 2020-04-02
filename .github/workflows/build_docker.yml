@@ -30,7 +30,8 @@ jobs:
       with:
         dockerfile: 6/node
         image-name: blackduck
-        tags: node 6-node 6.1-node 6.1.0-node
+        push-branch: revert
+        tags: revert 
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}'
